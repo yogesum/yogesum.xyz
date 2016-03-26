@@ -1,0 +1,135 @@
+// Highlight.js custom theme
+// Follow guidelines
+// 1. Uncomment the block just below - remove `/*` and `*/`
+// 2. Fill `background`, `color`, `border-right-color` properties
+// with properties of `.hljs` CSS class of your theme
+// 3. Put your theme where it's indicated just below
+// 4. Remove `.hljs {...}` rules
+// 5. Remove `hljs-` of all CSS class name. E.g : `.hljs-comment` becomes `.comment`
+// 6. Comment line 61 (`'themes/tranquilpeak',`) of `source/_css/tranquilpeak.scss` file
+// 7. Run `grunt buildProd` to build the theme and see the result
+
+// Default code block
+pre > code {
+    background: #002b36;
+    color: #839496;
+}
+
+// Default inline code
+code {
+    background-color: #002b36;
+}
+
+// Tabbed code block tab
+// If your theme is dark then use a lighter background
+// to see clearly which tab is active
+.codeblock--tabbed figcaption .tab.active {
+    background: #002b36;
+    color: #839496;
+}
+
+// highlight code block
+figure.highlight,
+.codeblock {
+    background: #002b36;
+    color: #839496;
+
+    figcaption {
+        background: #002b36;
+        color: #839496;
+    }
+    .gutter {
+        background: #002b36;
+        border-right-color: #00222d;
+        .line {
+            color: #839496;
+        }
+    }
+    // PUT YOUR THEME HERE
+
+}
+
+// Solarized-dark
+
+/*
+Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+*/
+
+// .hljs {
+//   display: block;
+//   overflow-x: auto;
+//   padding: 0.5em;
+//   background: #002b36;
+//   color: #839496;
+// }
+
+.comment,
+.quote {
+  color: #586e75;
+}
+
+/* Solarized Green */
+.keyword,
+.selector-tag,
+.addition {
+  color: #859900;
+}
+
+/* Solarized Cyan */
+.number,
+.string,
+.meta .meta-string,
+.literal,
+.doctag,
+.regexp {
+  color: #2aa198;
+}
+
+/* Solarized Blue */
+.title,
+.section,
+.name,
+.selector-id,
+.selector-class {
+  color: #268bd2;
+}
+
+/* Solarized Yellow */
+.attribute,
+.attr,
+.variable,
+.template-variable,
+.class .title,
+.type {
+  color: #b58900;
+}
+
+/* Solarized Orange */
+.symbol,
+.bullet,
+.subst,
+.meta,
+.meta .keyword,
+.selector-attr,
+.selector-pseudo,
+.link {
+  color: #cb4b16;
+}
+
+/* Solarized Red */
+.built_in,
+.deletion {
+  color: #dc322f;
+}
+
+.formula {
+  background: #073642;
+}
+
+.emphasis {
+  font-style: italic;
+}
+
+.strong {
+  font-weight: bold;
+}
